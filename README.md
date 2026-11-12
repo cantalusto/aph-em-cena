@@ -46,4 +46,3 @@ Não informe dados de pacientes reais no campo de notas. As notas existem soment
 ## Uso na prática simulada
 
 Treine com manequim e materiais próprios de simulação. Não aplique torniquetes, força ou procedimentos invasivos em colegas. A execução das técnicas deve seguir o treinamento da disciplina e a orientação do professor. Este aplicativo é material educacional, não ferramenta para conduzir ocorrências reais.
-
