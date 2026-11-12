@@ -27,16 +27,10 @@ const btn = (text,action,kind='primary',extra='') => `<button class="button ${ki
 const linkButton = (text,route,kind='primary')=>`<a class="button ${kind}" href="#${route}">${text}</a>`;
 
 function sceneArt() {
-  return `<div class="scene-art" aria-label="Ilustração esquemática de uma cena de colisão com quatro vítimas e área segura" role="img"><svg viewBox="0 0 460 290" fill="none" aria-hidden="true">
-  <defs><pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" stroke="#ffffff" stroke-opacity=".05"/></pattern></defs>
-  <rect width="460" height="290" fill="url(#grid)"/><path d="m-50 227 540-150" stroke="#42615a" stroke-width="102"/><path d="m-50 227 540-150" stroke="#a1b6a0" stroke-opacity=".5" stroke-width="2" stroke-dasharray="17 13"/>
-  <path d="m65 240 298-84" stroke="#d9f291" stroke-opacity=".4" stroke-dasharray="5 5"/><rect x="64" y="42" width="110" height="53" rx="12" fill="#d9f291" fill-opacity=".09" stroke="#d9f291" stroke-opacity=".4" stroke-dasharray="4 4"/><text x="82" y="64" fill="#d9f291" font-size="10" font-family="sans-serif" letter-spacing="2">ÁREA SEGURA</text><circle cx="84" cy="80" r="3" fill="#d9f291"/><path d="M93 80h62" stroke="#d9f291" stroke-opacity=".3"/>
-  <g transform="translate(183 142) rotate(-16)"><rect x="-40" y="-20" width="85" height="42" rx="9" fill="#e8ebe0"/><rect x="-17" y="-16" width="32" height="34" rx="5" fill="#647d72"/><path d="M-8-16v34M-17 0h32" stroke="#d6dfcd" stroke-width="2"/><rect x="-28" y="-24" width="16" height="5" rx="2" fill="#142e29"/><rect x="-28" y="21" width="16" height="5" rx="2" fill="#142e29"/><rect x="21" y="-24" width="16" height="5" rx="2" fill="#142e29"/><rect x="21" y="21" width="16" height="5" rx="2" fill="#142e29"/></g>
-  <g transform="translate(262 157) rotate(26)"><rect x="-31" y="-19" width="73" height="38" rx="8" fill="#ca8060"/><rect x="-8" y="-15" width="26" height="30" rx="5" fill="#4d675b"/><path d="M3-15v30" stroke="#b7c5b2"/><rect x="-22" y="-23" width="12" height="5" rx="2" fill="#142e29"/><rect x="-22" y="18" width="12" height="5" rx="2" fill="#142e29"/><rect x="22" y="-23" width="12" height="5" rx="2" fill="#142e29"/><rect x="22" y="18" width="12" height="5" rx="2" fill="#142e29"/></g>
-  <circle cx="214" cy="113" r="31" stroke="#d9f291" stroke-opacity=".3" stroke-dasharray="4 5"/><path d="m215 103-6 12h12Z" stroke="#d9f291"/><path d="M215 108v3m0 2v1" stroke="#d9f291"/>
-  ${[[115,108,'01','#c4dc89'],[295,99,'02','#d48e74'],[305,213,'03','#e6cd87'],[190,222,'04','#a2afa8']].map(([x,y,n,c])=>`<circle cx="${x}" cy="${y}" r="13" fill="#1d3932" stroke="${c}"/><text x="${x}" y="${y+4}" text-anchor="middle" fill="${c}" font-size="10" font-family="sans-serif">${n}</text>`).join('')}
-  <path d="M344 238h34m-17-17v34" stroke="#a4ba9a" stroke-opacity=".4"/><text x="356" y="214" fill="#a4ba9a" font-size="10" font-family="sans-serif">N</text>
-  </svg><span class="scene-label"><span class="live-dot"></span> CENÁRIO DE TREINAMENTO</span></div>`;
+  return `<div class="scene-art">
+    <img class="hero-illustration" src="/assets/colisao-aph-960.webp" srcset="/assets/colisao-aph-640.webp 640w, /assets/colisao-aph-960.webp 960w" sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 950px) 38vw, 42vw" width="960" height="640" alt="Ilustração de uma colisão simulada entre dois carros, com cones de sinalização e uma viatura de emergência ao fundo." fetchpriority="high" decoding="async">
+    <span class="scene-label"><span class="live-dot"></span> CENÁRIO ILUSTRATIVO DE TREINAMENTO</span>
+  </div>`;
 }
 function shell(content) {
   const navHtml = nav.map(([id,ic,label])=>`<a href="#${id}" class="nav-item ${route===id?'active':''}" ${route===id?'aria-current="page"':''}>${icon(ic)}<span>${label}</span>${route===id?'<span class="nav-dot"></span>':''}</a>`).join('');

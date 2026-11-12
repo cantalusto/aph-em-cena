@@ -31,7 +31,7 @@ npm test
 npm run build
 ```
 
-O build copia os oito arquivos públicos para `dist/`. O servidor local é apenas para desenvolvimento e não deve ser exposto como servidor de produção.
+O build copia os arquivos públicos e as duas variantes da ilustração gerada para `dist/`. O servidor local é apenas para desenvolvimento e não deve ser exposto como servidor de produção.
 
 ## Publicação na Vercel
 
