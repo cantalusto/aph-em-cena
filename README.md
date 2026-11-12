@@ -9,6 +9,7 @@ Ferramenta de estudo em português para **ensaiar uma prova prática de atendime
 - Autoavaliação por condutas observadas; **não avalia automaticamente técnicas físicas nem estima nota oficial**.
 - Doze cartões START adulto com correção comentada e limites exatos (FR > 30; TEC > 2 s).
 - Roteiro de condutas, quatro fichas de treino com materiais (pressão direta, torniquete, cervical e tala), dezoito cartões de recuperação de memória e plano de estudo de sessenta minutos.
+- Quatro temas com luminosidade reduzida: Noite suave (padrão), Neblina, Areia e Sálvia. Seletor no cabeçalho, preferência salva e aplicação antes da primeira pintura.
 - Layout responsivo para celular, tablet e desktop; teclado, foco visível e preferência de movimento reduzido.
 - Progresso salvo no navegador e conteúdo próprio disponível offline após o primeiro carregamento completo. PDF externo e fontes web precisam de conexão; fontes locais de fallback mantêm o aplicativo utilizável.
 
